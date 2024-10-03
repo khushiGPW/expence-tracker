@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Book</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body onload="Refresh()">
+    <h1>Expense Book</h1>
+    
+    <div class="BalanceBox">
+     <div class="Balance">
+        <h2 id="balanceAmt">0</h2>
+        <p>Current Balance</p>
+     </div>   
+    </div>
+
+    <div class="container">
+        <div class="DebitCredit">
+            <div class="income">
+                <h2 id="incomeAmt">0</h2>
+                <p>income</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="expense">
+                <h2 id="expenceAmt">0</h2>
+                <p>expense</p>
+            </div>
+        </div>
+    </div>
+
+
+    <form class="Transition" method="dialog">
+        <label for="Amount">Amount</label>
+        <input type="number" id="Amount" required>
+
+        <label for="Remark">Remark</label>
+        <input type="text" id="Remark" required>
+
+        <div class="controlBtn">
+            <button onclick="Income()">Income</button>
+            <button onclick="Expense()">Expence</button>
+        </div>
+    </form>
+
+
+    <table id="History">
+        <tr>
+            <th>Remark</th>
+            <th>timeStamp</th>
+            <th>Amount</th>
+        </tr>
+        
+
+    
+    </table>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

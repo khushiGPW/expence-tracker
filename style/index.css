@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+body .BalanceBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+body .BalanceBox .Balance h2,
+body .BalanceBox .Balance p{
+   text-align: center;
+}
+
+body .container{
+    display: flex;
+    justify-content: center;
+}
+
+body .container .DebitCredit{
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(212, 212, 212, 0.437);
+    box-shadow: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body .container .DebitCredit .line{
+    height: inherit;
+    background-color: black;
+    width: 2px;
+}
+body .container .DebitCredit .income,
+body .container .DebitCredit .expense{
+    margin: 0 15px;
+}
+body .container .DebitCredit .income p{
+    color: green;
+}
+body .container .DebitCredit .expense p{
+    color: red;
+}
+
+body .Transition{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+body .Transition label{
+    margin: 5px 0;
+}
+
+body .Transition input{
+    margin: 0 0 5px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+body .Transition .controlBtn{
+    margin-top: 10px;
+}
+
+body .Transition .controlBtn button{
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 3px;
+}
+
+body .Transition .controlBtn button:nth-child(1){
+    background-color: green;
+    color: white;
+}
+
+body .Transition .controlBtn button:nth-child(2){
+    background-color: red;
+    color: white;
+}
+body table{
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid black;
+}
+
+body table tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+body table tr:nth-child(1){
+    background-color: antiquewhite;
+
+}
